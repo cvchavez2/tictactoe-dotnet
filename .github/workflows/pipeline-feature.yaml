@@ -1,0 +1,40 @@
+name: feature
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+      - 'develop'
+
+jobs:
+  build_dotnet:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: dotnet build
+
+  test_dotnet:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: dotnet test -p:CollectCoverage=true -p:CoverletOutPutFormat=opencover
+    # add coverlet output format
+
+  analyze_dotnet:
+    needs: [build_dotnet, test_dotnet]
+    runs-on: ubuntu-20.04
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - run: dotnet tool install --global dotnet-sonarscanner
+      - run: |
+          dotnet sonarscanner begin \
+            /k:"cvchavez2_tictactoe-dotnet" \
+            /o:"cvchavez2" \
+            /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
+            /d:sonar.host.url="https://sonarcloud.io"
+          dotnet build
+          dotnet test -p:CollectCoverage=true -p:CoverletOutPutFormat=opencover --logger trx
+          dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"

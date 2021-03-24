@@ -1,0 +1,153 @@
+{
+  "Tictactoe.Service.dll": {
+    "C:\\Users\\2005980\\Workspace2\\tictactoe\\tictactoe-dotnet\\Tictactoe.Service\\Program.cs": {
+      "Tictactoe.Service.Program": {
+        "System.Void Tictactoe.Service.Program::Main(System.String[])": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder Tictactoe.Service.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\2005980\\Workspace2\\tictactoe\\tictactoe-dotnet\\Tictactoe.Service\\Startup.cs": {
+      "Tictactoe.Service.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration Tictactoe.Service.Startup::get_Configuration()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void Tictactoe.Service.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void Tictactoe.Service.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "41": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 9,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Tictactoe.Service.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\2005980\\Workspace2\\tictactoe\\tictactoe-dotnet\\Tictactoe.Service\\WeatherForecast.cs": {
+      "Tictactoe.Service.WeatherForecast": {
+        "System.DateTime Tictactoe.Service.WeatherForecast::get_Date()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Tictactoe.Service.WeatherForecast::get_TemperatureC()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Tictactoe.Service.WeatherForecast::get_TemperatureF()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String Tictactoe.Service.WeatherForecast::get_Summary()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\2005980\\Workspace2\\tictactoe\\tictactoe-dotnet\\Tictactoe.Service\\Controllers\\WeatherForecastController.cs": {
+      "Tictactoe.Service.Controllers.WeatherForecastController": {
+        "System.Collections.Generic.IEnumerable`1<Tictactoe.Service.WeatherForecast> Tictactoe.Service.Controllers.WeatherForecastController::Get()": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        },
+        "System.Void Tictactoe.Service.Controllers.WeatherForecastController::.ctor(Microsoft.Extensions.Logging.ILogger`1<Tictactoe.Service.Controllers.WeatherForecastController>)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Void Tictactoe.Service.Controllers.WeatherForecastController::.cctor()": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
