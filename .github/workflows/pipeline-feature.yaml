@@ -18,7 +18,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: dotnet test -p:CollectCoverage=true -p:CoverletOutPutFormat=opencover
-    # add coverlet output format
 
   analyze_dotnet:
     needs: [build_dotnet, test_dotnet]
