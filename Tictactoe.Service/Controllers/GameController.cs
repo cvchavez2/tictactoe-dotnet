@@ -9,14 +9,13 @@ namespace Tictactoe.Service.Controllers
   [Route("[controller]")]
   public class GameController : ControllerBase
   {
-    private readonly GameService _gameService;
-    public GameController(GameService gameService)
+    private readonly IGameService _gameService;
+    public GameController(IGameService gameService)
     {
       this._gameService = gameService;
     }
 
     [HttpGet]
-    [Route("[new]")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public ActionResult NewGame(){
       return Ok(_gameService.SetNewGame());

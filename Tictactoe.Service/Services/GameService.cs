@@ -1,6 +1,6 @@
 namespace Tictactoe.Service.Services
 {
-  public class GameService
+  public class GameService : IGameService
   {
     string[] Board { get; set; }
     string Winner { get; set; }
