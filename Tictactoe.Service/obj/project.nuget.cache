@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "CGJgjfzAxPmvHIbcTmqlFU1MhPOJ2cbfQpFpZXTtEVzvgu3CbwEqFD/njF3cBZRshKIys4ZQI/FDLdMh19bmuQ==",
+  "dgSpecHash": "7uoIrxJffbBkecOWnqmkvrYbGtJdpGL+s9tjup+hRpShn1AUXbjgnqfCOKZ6mm4oDT076cWj8JfYbx4j4uHuAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\2005980\\Workspace2\\tictactoe\\tictactoe-dotnet\\Tictactoe.Service\\Tictactoe.Service.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\2005980\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\2005980\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\2005980\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.1\\swashbuckle.aspnetcore.6.1.1.nupkg.sha512",
+    "C:\\Users\\2005980\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.1\\swashbuckle.aspnetcore.swagger.6.1.1.nupkg.sha512",
+    "C:\\Users\\2005980\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.1\\swashbuckle.aspnetcore.swaggergen.6.1.1.nupkg.sha512",
+    "C:\\Users\\2005980\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.1\\swashbuckle.aspnetcore.swaggerui.6.1.1.nupkg.sha512"
+  ],
   "logs": []
 }

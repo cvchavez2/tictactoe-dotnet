@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tictactoe.Service</name>
+    </assembly>
+    <members>
+        <member name="M:Tictactoe.Service.Controllers.GameController.NewGame">
+            <summary>
+            Resets Tictactoe Board
+            </summary>
+        </member>
+    </members>
+</doc>
