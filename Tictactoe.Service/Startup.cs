@@ -29,6 +29,21 @@ namespace Tictactoe.Service
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => 
+            {
+              // options.AddPolicy("Policy1", 
+              //   builder => 
+              //   {
+              //     builder.WithOrigins("https.azureweb.com")
+              //                           .AllowAnyHeader()
+              //                           .AllowAnyMethod();
+              //   });
+              options.AddDefaultPolicy(options => 
+              {
+                options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+              });
+            });
+
             services.AddControllers();
             services.AddScoped<IGameService, GameService>();
             services.AddSwaggerGen(c => 
@@ -58,6 +73,8 @@ namespace Tictactoe.Service
             }
 
             app.UseSwagger();
+
+            app.UseCors();
 
             app.UseSwaggerUI(c => {
               c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
